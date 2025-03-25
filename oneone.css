@@ -474,10 +474,12 @@ button:hover {
     text-align: center;
     margin-top: 0px;
     width:100%;
-    max-width:100%;
+    
 }
 
 .project-container {
+    max-width:100%;
+    overflow-x:hidden;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -557,6 +559,7 @@ button:hover {
     }
     .project-card {
         width: 90%;
+	margin:10px auto;
     }
 }
 /* Internships Section */
