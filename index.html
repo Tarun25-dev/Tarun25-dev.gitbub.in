@@ -20,6 +20,7 @@
         <a href=#contact><li>contact us</li></a>
     </ul>
 </nav>
+<hr class="navborder">
  <!-- profile section -->
 <section class="profile-section" id="one">
     <div class="profile-image">
@@ -27,7 +28,7 @@
     </div>
     <div class="profile-info">
         <h1>Hi, I'm K Tharun kumar</h1>
-        <p>Computer Science Engineering Student</p>
+        <p>A Computer Science Engineering student</p>
         <p>A third-year undergraduate engineering student at <strong>Santhiram Engineering College</strong>, Nandyal.</p>
         <a href=#contactme><button>Contact me ➡</button></a>
         <button>My resume ➡</button>
@@ -35,7 +36,7 @@
 </section>
 <!--about me-->
 <section class="about-section">
-    <h2>About Me</h2>
+    <h2>About Me</h2><hr id="animatedHr" class="hrabout">
     <p class="intro-text">My introduction</p>
     <p class="about-description">
         I'm a third-year ISE undergraduate, passionate about technology and an avid reader. I have a self-motivated and can-do attitude, thriving in challenging and dynamic environments. Seeking a competitive position to enhance my skills and contribute to a professional organization. I'm very much passionate to learn new stuff that interests me and can help me to get better.
@@ -43,8 +44,8 @@
 </section>
 <!--skills section-->
 	<section class="skills">
-    <h2>Skills</h2>
-    <p>My technical level</p>
+    <h2 class="skillsheader">Skills</h2><hr id="animatedHr" class="hrskills">
+    <p class="skillpara">My technical level</p>
 
     <!-- Programming Languages -->
     <div class="skill-category">
@@ -64,10 +65,6 @@
                 <img src="images/c.png" alt="C">
                 <p>C</p>
             </div>
-            <div class="skill-item">
-                <img src="images/js.png" alt="JavaScript">
-                <p>JavaScript</p>
-            </div>
         </div>
     </div>
 
@@ -76,18 +73,10 @@
         <button class="category-toggle" onclick="toggleSection('constructs')">
             IT Constructs  &#8595
         </button>
-        <div id="constructs" class="skill-content" style="display: none;">
-            <div class="skill-item">
-                <img src="images/dbms.png" alt="DBMS">
-                <p>DBMS</p>
-            </div>
+        <div id="constructs" class="skill-content" style="display: none;">  
             <div class="skill-item">
                 <img src="images/oops.png" alt="OOP">
                 <p>OOP</p>
-            </div>
-            <div class="skill-item">
-                <img src="images/dsa.png" alt="DSA">
-                <p>DSA</p>
             </div>
         </div>
     </div>
@@ -106,22 +95,18 @@
                 <img src="images/mongodb.png" alt="MongoDB">
                 <p>MongoDB</p>
             </div>
-            <div class="skill-item">
-                <img src="images/git.png" alt="Git">
-                <p>Git</p>
-            </div>
         </div>
     </div>
 </section>
 <section id="education" class="section">
           <img src="images/education.png" alt="Education Icon" class="eduicon">
-          <h2 class="section-title">Education</h2>
+          <h2 class="section-title">Education</h2><hr id="animatedHr" class="hreducation">
           <div class="education-timeline">
           <div class="education-item">
             <h3>SSC</h3>
             <p>Master Public High School</p>
             <p>📅 2019</p>
-            <button onclick="openPopup('sslc')">View More ➔</button>
+            <button onclick="openPopup('ssc')">View More ➔</button>
         </div>
         <div class="education-item">
             <h3>Class 12th</h3>
@@ -161,72 +146,58 @@
             </tr>
             <tr>
                 <th>Marks Memo:</th>
-                <td>Available on request</td>
+                <td><a href="">click here</a></td>
             </tr>
         </table>
     </div>
 </div>
 <section class="project-section" id="three">
-    <h2>Projects</h2>
-    <p>Most recent work</p>
+    <h2 class="proheader">Projects</h2><hr id="animatedHr" class="hrproject">
+    <p class="propara">Most recent work</p>
     <div class="project-container">
         <div class="project-card">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>Project 1 Title</h3>
-            <p>Brief description of Project 1. Explaining the project's purpose and functionalities.</p>
+            <img src="images/project.jpg" alt="Project 1">
+            <h3>My Portfolio</h3>
+            <p>Developed a personal portfolio website using HTML, CSS, and JavaScript to showcase my skills, education, projects, and achievements. It includes a responsive design with multiple sections, such as "About Me," "Skills," "Projects," and "Contact." Additionally, I integrated a predefined chatbot to enhance user interaction.</p>
             <div class="project-buttons">
-                <a href="#">GitHub Repository</a>
-                <a href="#">See Live</a>
+                <a href="https://github.com/tarun25-dev/tarun25-dev.github.io">GitHub Repository</a>
+                <a href="https://tarun25-dev.github.io/">See Live</a>
             </div>
         </div>
-        <div class="project-card">
-            <img src="project2.jpg" alt="Project 2">
-            <h3>Project 2 Title</h3>
-            <p>Brief description of Project 2. Explaining the project's purpose and functionalities.</p>
-            <div class="project-buttons">
-                <a href="#">GitHub Repository</a>
-                <a href="#">See Live</a>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="project3.jpg" alt="Project 3">
-            <h3>Project 3 Title</h3>
-            <p>Brief description of Project 3. Explaining the project's purpose and functionalities.</p>
-            <div class="project-buttons">
-                <a href="#">GitHub Repository</a>
-                <a href="#">See Live</a>
-            </div>
-        </div>
+
     </div>
 </section>
 <!-- Internships Section -->
 <section class="internships-section">
-    <h2 class="internships-title">Internships</h2>
+    <h2 class="internships-title">Internships</h2><hr id="animatedHr" class="hrintern">
     <div class="internship-card">
         <h3>Web Development Intern - ABC Company</h3>
-        <p>Developed and maintained web applications using React.js and Node.js</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sed, eveniet vel rerum molestias dicta, libero voluptas architecto asperiores nobis at veniam laudantium sunt repellendus neque ab non ipsa cum!</p>
         <p class="internship-dates">May 2023 - August 2023</p>
-        <button>View More</button>
+        <button>Certificate 👇</button>
     </div>
 
     <div class="internship-card">
         <h3>Graphic Design Intern - XYZ Gaming</h3>
-        <p>Created visual assets and designs for in-game content</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut cum minima enim, animi itaque deserunt quidem consequatur officiis neque iusto nihil fugit eius totam voluptate rerum velit ex, ad eos?</p>
         <p class="internship-dates">June 2022 - August 2022</p>
-        <button>View More</button>
+        <button>Certificate 👇</button>
     </div>
 </section>
 <!-- Achievements Section -->
 <section class="achievements-section">
-    <h2 class="achievements-title">Achievements</h2>
+    <h2 class="achievements-title">Achievements</h2><hr id="animatedHr" class="hracheive">
     <ul class="achievements-list">
-        <li><span>🏆</span> Winner of the XYZ Coding Challenge 2024</li>
-        <li><span>🏆</span> Completed Full-Stack Web Development Bootcamp</li>
-        <li><span>🏆</span> Published research paper on AI in Gaming</li>
+        <li class="parent"><span>🏆</span> <h3>Winner of the XYZ Coding Challenge 2024</h3></li>
+        <li class="child"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius porro possimus officiis voluptates, esse dolor tenetur magni voluptatem voluptatibus, iure commodi doloremque, explicabo error amet rerum quisquam consectetur voluptate praesentium.</h3><p>
+        <li class="parent"><span>🏆</span> <h3>Completed Full-Stack Web Development Bootcamp</h3></li>
+        <li class="child"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius porro possimus officiis voluptates, esse dolor tenetur magni voluptatem voluptatibus, iure commodi doloremque, explicabo error amet rerum quisquam consectetur voluptate praesentium.</h3><p></p>
+        <li class="parent"><span>🏆</span><h3> Published research paper on AI in Gaming</h3></li>
+        <li class="child"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius porro possimus officiis voluptates, esse dolor tenetur magni voluptatem voluptatibus, iure commodi doloremque, explicabo error amet rerum quisquam consectetur voluptate praesentium.</h3><p></p>
     </ul>
 </section>
 <section id="contact" class="contact-section">
-    <h2 class="contact-title">Contact Me</h2>
+    <h2 class="contact-title">Contact Me</h2><hr class="hrcontact">
     <p class="contact-subtitle">Get in touch</p>
 
     <div class="contact-info">
