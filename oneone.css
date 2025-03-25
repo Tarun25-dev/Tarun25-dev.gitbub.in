@@ -62,14 +62,6 @@ button {
         gap: 10px;
     }
 }
-.navborder{
-    margin-top:0px;
-    width:100%;
-    color: rgb(26, 26, 221);
-    height:3px;
-    background-color: rgb(26, 26, 221);
-}
-
 .profile-section {
     display: flex;
     align-items: center;
