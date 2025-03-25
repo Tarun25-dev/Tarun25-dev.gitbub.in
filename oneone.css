@@ -10,12 +10,14 @@ button {
 }
 
 .navbar {
+    height:40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #5B58E0; /* Purple background */
     padding: 15px;
     color: white;
+    margin-bottom: 0px;
 }
 
 .navbar-left h2 {
@@ -60,6 +62,13 @@ button {
         gap: 10px;
     }
 }
+.navborder{
+    margin-top:0px;
+    width:100%;
+    color: rgb(26, 26, 221);
+    height:3px;
+    background-color: rgb(26, 26, 221);
+}
 
 .profile-section {
     display: flex;
@@ -81,10 +90,11 @@ button {
 }
 
 .profile-info h1 {
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 2.1rem;
     margin-bottom: 10px;
     color: #333;
+    margin-bottom:25px;
+
 }
 
 .profile-info p {
@@ -139,10 +149,10 @@ section {
 }
 
 .about-section h2 {
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 2.5rem;
     margin-bottom: 10px;
     color: #333;
+    margin-bottom:25px;
 }
 
 .intro-text {
@@ -189,9 +199,9 @@ section {
     color: white;
     border: none;
     padding: 10px;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
-    transition: background 0.3s ;
+    transition: background 0.3s ease-out ;
 }
 
 .category-toggle:hover {
@@ -206,6 +216,19 @@ section {
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+}
+.skillsheader{
+    
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    margin-bottom:25px;
+               
+}
+.skillpara{
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
 }
 
 .skill-item {
@@ -236,16 +259,13 @@ section {
 }
 
 .section-title {
-    font-size: 28px;
-    justify-content: center;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: black;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 25px;
 }
 
 .education-timeline {
+    margin-top:15px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -338,10 +358,11 @@ button:hover {
 }
 
 .eduicon {
-    length: 100px;
-    width: 100px;
+    length: 120px;
+    width: 120px;
     border-radius: 50%;
     border: none;
+    margin-bottom:0px;
 }
 
 .education-section {
@@ -452,6 +473,18 @@ button:hover {
     gap: 20px;
     flex-wrap: wrap;
 }
+.proheader{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    margin-bottom:25px;
+}
+
+.propara{
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+}
 
 .project-card {
     background-color: white;
@@ -467,7 +500,7 @@ button:hover {
 
 .project-card img {
     width: 100%;
-    height: 150px;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -477,13 +510,15 @@ button:hover {
     font-size: 20px;
     margin-bottom: 10px;
     font-weight: bold;
+    color: black;
 }
 
 .project-card p {
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 15px;
     color: #666;
     text-align: center;
+    line-height:35px;
 }
 
 .project-buttons {
@@ -522,12 +557,15 @@ button:hover {
 }
 
 .internships-title {
-    font-size: 32px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom:25px;
 }
 
+
 .internship-card {
+    margin-top: 20px;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
@@ -549,6 +587,7 @@ button:hover {
     font-size: 16px;
     color: #555;
     margin-bottom: 15px;
+    line-height:35px;
 }
 
 .internship-card .internship-dates {
@@ -587,26 +626,22 @@ button:hover {
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    width: 100vw;        /* Ensures full viewport width */
-    max-width: 100%;     /* Prevents any unwanted restriction */
-    margin: 0;           /* Removes auto margin */
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
 }
 
 .achievements-title {
-    font-size: 2.2em;
-    color: black;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 25px;
 }
 
 .achievements-list {
     list-style-type: none;
     padding: 0;
     margin: 20px auto;
-    max-width: 800px; /* Keeps the inner list centered */
+    max-width: 800px;
 }
 
 .achievements-list li {
@@ -621,7 +656,8 @@ button:hover {
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, max-height 0.5s ease-out, opacity 0.5s ease-out;
+    cursor: pointer;
 }
 
 .achievements-list li:hover {
@@ -632,6 +668,22 @@ button:hover {
 .achievements-list span {
     font-size: 1.4em;
     color: #6a5acd;
+}
+
+/* Hiding child items initially */
+.achievements-list .child {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out, padding 0.5s;
+    padding: 0 15px;
+}
+
+/* When active, show child elements */
+.achievements-list .child.active {
+    max-height: 200px; /* Adjust this based on content */
+    opacity: 1;
+    padding: 15px;
 }
 .contact-section {
 	background-color:#f0f8ff;
@@ -658,12 +710,13 @@ button:hover {
     font-size: 2.5rem;
     margin-bottom: 10px;
     color: #333;
+    margin-bottom: 25px;
 }
 
 .contact-subtitle {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 30px;
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
 }
 
 .contact-info {
@@ -848,4 +901,41 @@ button:hover {
     border-radius: 10px;
     align-self: flex-start;
     max-width: 70%;
+}
+/* this section is for hr lines under all headings */
+.hrabout{
+    
+    width:180px;
+    border:1px solid grey;
+    animation:expand ease-in-out forwards;
+}
+.hrskills{
+    width:120px;
+    border:1px solid grey;
+    animation:expand ease-in-out forwards;
+}
+.hreducation{
+    width:200px;
+    border:1px solid grey;
+    animation:expand ease-in-out forwards;
+}
+.hrproject{
+    width:165px;
+    border:1px solid grey;
+    animation:expand ease-in-out forwards;
+}
+.hrintern{
+    width:220px;
+    border:1px solid grey;
+    animation:expand ease-in-out forwards;
+}
+.hracheive{
+    width:270px;
+    border:1px solid grey;
+    animation:expand ease-in-out forwards;
+}
+.hrcontact{
+    width:220px;
+    border:1px solid grey;
+    animation:expand ease-in-out forwards;
 }
