@@ -7,25 +7,25 @@ function toggleSection(sectionId) {
     }
 }
 const data = {
-    sslc: {
-        title: "S.V.S High School",
-        location: "Mangalore, Karnataka",
+    ssc: {
+        title: "Master Public High School",
+        location: "Nandyal, Andhra Pradesh",
         duration: "2017 - 2019",
         percentage: "85%",
-        image: "sslc-photo.jpg"
+        image: ""
     },
     class12: {
-        title: "Vidyodaya Pre University College",
-        location: "Mangalore, Karnataka",
+        title: "Rao's jr. College",
+        location: "Nandyal, Andhra Pradesh",
         duration: "2019 - 2021",
-        percentage: "88%",
+        percentage: "55%",
         image: "class12-photo.jpg"
     },
     college: {
-        title: "Canara Engineering College",
-        location: "Mangalore, Karnataka",
+        title: "Santhiram Engineering College",
+        location: "Nandyal, Andhra Pradesh",
         duration: "2022 - 2026",
-        percentage: "Ongoing",
+        percentage: "70%",
         image: "college-photo.jpg"
     }
 };
@@ -92,3 +92,12 @@ function appendMessage(sender, message) {
     chatBox.appendChild(messageElement);
     chatBox.scrollTop = chatBox.scrollHeight;
 }
+//to hide acheivements info staring and when click it opens
+document.querySelectorAll('.parent').forEach((parent, index) => {
+    parent.addEventListener('click', () => {
+        let child = parent.nextElementSibling;
+        if (child.classList.contains('child')) {
+            child.classList.toggle('active');
+        }
+    });
+});
