@@ -10,14 +10,14 @@ button {
 }
 
 .navbar {
-    height:40px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #5B58E0; /* Purple background */
     padding: 15px;
     color: white;
-    margin-bottom: 0px;
+    
 }
 
 .navbar-left h2 {
