@@ -687,9 +687,6 @@ button:hover {
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     margin: 0;               /* Removed auto margin */
     text-align: center;
-    box-sizing: border-box;
-    overflow-x: hidden;      /* Prevents overflow issues */
-    width: 100vw;            /* Ensures it spans the full width */
     max-width: 100%;         /* Prevents unwanted restriction */
 }
 
