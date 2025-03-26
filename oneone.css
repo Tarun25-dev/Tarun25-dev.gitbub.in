@@ -642,7 +642,7 @@ button:hover {
     list-style-type: none;
     padding: 0;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 100%;
 }
 
 .achievements-list li {
