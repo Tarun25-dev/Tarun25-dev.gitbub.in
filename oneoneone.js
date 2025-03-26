@@ -18,7 +18,7 @@ const data = {
         title: "Rao's jr. College",
         location: "Nandyal, Andhra Pradesh",
         duration: "2019 - 2021",
-        percentage: "55%",
+        percentage: "54.7%",
         image: "class12-photo.jpg"
     },
     college: {
