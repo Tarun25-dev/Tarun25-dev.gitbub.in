@@ -12,21 +12,21 @@ const data = {
         location: "Nandyal, Andhra Pradesh",
         duration: "2017 - 2019",
         percentage: "85%",
-        image: ""
+        image: "images/school.png"
     },
     class12: {
         title: "Rao's jr. College",
         location: "Nandyal, Andhra Pradesh",
         duration: "2019 - 2021",
         percentage: "54.7%",
-        image: "class12-photo.jpg"
+        image: "images/college.png"
     },
     college: {
         title: "Santhiram Engineering College",
         location: "Nandyal, Andhra Pradesh",
         duration: "2022 - 2026",
         percentage: "70%",
-        image: "college-photo.jpg"
+        image: "images/srec.jpg"
     }
 };
 
