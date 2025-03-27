@@ -78,8 +78,17 @@ function chatbot() {
     appendMessage("user", `You: ${userInput}`);
 
     let response = "I'm not sure how to respond. Can you rephrase?";
-    if (userInput.includes("hello")) response = "Hello! How can I help?";
+    if (userInput.includes("hello")||userInput.includes("hi"))response = "Hello! How can I help?";
     if (userInput.includes("bye")) response = "Goodbye! Have a great day!";
+    if (userInput.includes("what is your name?")||userInput.includes("what is your name")||userInput.includes("name")||userInput.includes("what is your name")) response = "Hi, I'm a Chatbot ! How can i help you ?";
+    if (userInput.includes("Introduce yourself")||userInput.includes("about you")||userInput.includes("about")||userInput.includes("tell me about yourself")) response = "Hi, I'm K Tharun kumar , i hail from Nandyal , a district of Andhra Pradesh and currently i'm pursuing my Bachelor's degree with the stream of Computer Sceince and Engineering at Santhiram Engineering College, Nandyal .";
+    if (userInput.includes("what are your skills?")||userInput.includes("skills")||userInput.includes("what are your skills"))response = "My technical skills are html, css, java, python, sql";
+    if (userInput.includes("About education")||userInput.includes("education")||userInput.includes("educational qualification"))response = "i have completed my SSC in Master Public School,Nandyal, and i have completed my intermediate at Rao's jr college ,Nandyal and currently i'm pursuing B-tech. in Santhiram Engineering College ,Nandyal.";
+    if (userInput.includes("intermediate college")||userInput.includes("inter college")||userInput.includes("college name"))response="RAO'S Jr. COLLEGE";
+    if (userInput.includes("btech")||("undergraduation")||("what is your college name")||("b-tech"))response = "SANTHIRAM ENGINEERING COLLEGE";
+    if (userInput.includes("which branch")||userInput.includes("which stream")||userInput.includes("branch name")||userInput.includes("branch")||userInput.includes("course"))response="COMPUTER SCIENCE AND ENGINEERING";
+    
+    if (userInput.includes("school name")||userInput.includes("school")||userInput.includes("ssc details")||userInput.includes("ssc"))response = "MASTER PUBLIC SCHOOL";
 
     setTimeout(() => appendMessage("bot", `Chatbot: ${response}`), 500);
 }
