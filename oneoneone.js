@@ -121,3 +121,29 @@ document.querySelectorAll('.parent').forEach((parent, index) => {
         }
     });
 });
+//for heart
+const profileImage = document.getElementById('profileImage');
+
+        profileImage.addEventListener('mousemove', function (e) {
+            const rect = profileImage.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            createHeart(x, y);
+        });
+
+        function createHeart(x, y) {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.style.left = `${x}px`;
+            heart.style.top = `${y}px`;
+
+            // Random scaling for variation
+            const scale = Math.random() * 0.5 + 0.8;
+            heart.style.transform = `rotate(45deg) scale(${scale})`;
+
+            profileImage.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 1000);
+        }
