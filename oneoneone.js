@@ -66,53 +66,43 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
 function chatbot() {
     const userInputField = document.getElementById("user-input");
     const chatBox = document.getElementById("chat-box");
     let userInput = userInputField.value.trim().toLowerCase();
     userInputField.value = "";
 
-    if (userInput === "") return;
+    if (userInput === "") return; // Prevent empty input
 
     appendMessage("user", `You: ${userInput}`);
 
     let response = "I'm not sure how to respond. Can you rephrase?";
-let lowerInput = userInput.toLowerCase(); // Convert input to lowercase
 
-if (lowerInput.includes("hello") || lowerInput.includes("hi")) {
-    response = "Hello! How can I help you?";
-} 
-else if (lowerInput.includes("bye")) {
-    response = "Goodbye! Have a great day!";
-} 
-else if (lowerInput.includes("what is your name?") || lowerInput.includes("what is your name") || lowerInput.includes("name")) {
-    response = "Hi, I'm a chatbot! How can I help you?";
-} 
-else if (lowerInput.includes("introduce yourself") || lowerInput.includes("about you") || lowerInput.includes("about") || lowerInput.includes("tell me about yourself")) {
-    response = "Hi, I'm K Tharun Kumar. I hail from Nandyal, a district in Andhra Pradesh, and I'm currently pursuing my Bachelor's degree in Computer Science and Engineering at Santhiram Engineering College, Nandyal.";
-} 
-else if (lowerInput.includes("what are your skills?") || lowerInput.includes("skills")) {
-    response = "My technical skills include HTML, CSS, Java, Python, and SQL.";
-} 
-else if (lowerInput.includes("about education") || lowerInput.includes("education") || lowerInput.includes("educational qualification")) {
-    response = "I completed my SSC at Master Public School, Nandyal, and my intermediate education at Rao's Junior College, Nandyal. Currently, I'm pursuing a B.Tech in Computer Science and Engineering at Santhiram Engineering College, Nandyal.";
-} 
-else if (lowerInput.includes("intermediate college") || lowerInput.includes("inter college") || lowerInput.includes("college name")) {
-    response = "Rao's Junior College.";
-} 
-else if (lowerInput.includes("btech") || lowerInput.includes("undergraduation") || lowerInput.includes("what is your college name") || lowerInput.includes("b-tech")) {
-    response = "Santhiram Engineering College.";
-} 
-else if (lowerInput.includes("which branch") || lowerInput.includes("which stream") || lowerInput.includes("branch name") || lowerInput.includes("branch") || lowerInput.includes("course")) {
-    response = "Computer Science and Engineering.";
-}
+    if (userInput.includes("hello") || userInput.includes("hi")) {
+        response = "Hello! How can I help you?";
+    } else if (userInput.includes("bye")) {
+        response = "Goodbye! Have a great day!";
+    } else if (userInput.includes("name")) {
+        response = "Hi, I'm a chatbot! How can I help you?";
+    } else if (userInput.includes("introduce yourself") || userInput.includes("about")) {
+        response = "Hi, I'm K Tharun Kumar. I hail from Nandyal, a district in Andhra Pradesh, and I'm currently pursuing my Bachelor's degree in Computer Science and Engineering at Santhiram Engineering College, Nandyal.";
+    } else if (userInput.includes("skills")) {
+        response = "My technical skills include HTML, CSS, Java, Python, and SQL.";
+    } else if (userInput.includes("education")) {
+        response = "I completed my SSC at Master Public School, Nandyal, and my intermediate education at Rao's Junior College, Nandyal. Currently, I'm pursuing a B.Tech in Computer Science and Engineering at Santhiram Engineering College, Nandyal.";
+    } else if (userInput.includes("college name") || userInput.includes("intermediate college")) {
+        response = "Rao's Junior College.";
+    } else if (userInput.includes("btech") || userInput.includes("undergraduation") || userInput.includes("b-tech")) {
+        response = "Santhiram Engineering College.";
+    } else if (userInput.includes("branch") || userInput.includes("course")) {
+        response = "Computer Science and Engineering.";
+    }
 
-console.log(response);
-    
-
+    console.log(response);
     setTimeout(() => appendMessage("bot", `Chatbot: ${response}`), 500);
 }
+
+
 
 function appendMessage(sender, message) {
     const chatBox = document.getElementById("chat-box");
