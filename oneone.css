@@ -96,7 +96,54 @@ html, body {
     text-align: center;
     width: 100%;
 }
+ .profile-image {
+            display: inline-block;
+            position:relative;
+	    overflow:hidden;
+ }
 
+ /* Heart Effect */
+ .heart {
+       width: 20px;
+       height: 20px;
+       background-color: red;
+       position: absolute;
+       transform: rotate(45deg);
+       animation: floatUp 1s ease-out forwards;
+       pointer-events: none;             
+       opacity: 0.8;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart::after {
+            top: 0;
+            left: -10px;
+        }
+
+        @keyframes floatUp {
+            0% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-40px) scale(1.5);
+            }
+	}
 /* Profile Image */
 .profile-image img {
     width: 150px;
