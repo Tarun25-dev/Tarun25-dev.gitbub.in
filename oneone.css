@@ -698,8 +698,8 @@ button:hover {
 
 /* Icon or Indicator */
 .achievements-list span {
-	display:flex;
-        left:50%;
+	
+        
     font-size: 1.5em;
     color: #6a5acd;
 }
